@@ -10,14 +10,14 @@
 
         <preference name="phonegap-version" value="3.6.3" />
 
-        <name>HotelApp</name>
+        <name>School Planet</name>
 
         <description>
-            Aplicación de práctica para la reservación de habitaciones de un hotel.
+            Aplicación móvil de la red educativa School Planet.
         </description>
 
-        <author href="http://cenet.mx" email="carlos@cenet.mx">
-            Carlos Celma
+        <author href="http://cenet.mx" email="amram_x@hotmail.com">
+            Social Realms
         </author>
         
 	
