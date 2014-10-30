@@ -11,20 +11,20 @@
 
 <body>
 
-<div data-role="page" id="home" style="background:#FBDC04">
+<div data-role="page" id="home" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back.png)";>
 
 	<div data-role="header" style="background:#009"><center>
-    <img src="css/images/logoX.PNG"  width="200" height="85" />
+    <img src="http://50.62.9.206/~srealms/nuevageneracion/logoX.png"  width="200" height="85" />
     </center>
 	</div><!-- /header -->
-
+<br /><br />
 	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true">
-   		 <li><a href="#nr1">Eventos</a></li>
-   		 <li><a href="#historial">Historial Académico</a></li>
-   		 <li><a href="#priv">Actividad</a></li>
-         <li><a href="#reg">Registro</a></li>
-		</ul>
+		<center>
+   		 <a href="#nr1"><img src="http://50.62.9.206/~srealms/nuevageneracion/movil/actividad.png" width="250" /></a><br /><br />
+   		 <a href="#historial" id="verHistorial"><img src="http://50.62.9.206/~srealms/nuevageneracion/movil/historial.png" width="250" /></a><br /><br />
+   		 <a href="#priv"><img src="http://50.62.9.206/~srealms/nuevageneracion/movil/mensajes.png" width="250" /></a><br /><br />
+         <a href="#reg"><img src="http://50.62.9.206/~srealms/nuevageneracion/movil/cuenta.png" width="250" /></a>
+		</center>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed" data-theme="b">
@@ -33,8 +33,6 @@
 	</div><!-- /footer -->
     
 </div><!-- /page -->
-
-
 
 
 
@@ -63,6 +61,7 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
 
 
 
+
 <div data-role="page" id="nr1">
 
 	<div data-role="header">
@@ -72,9 +71,9 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
 	<div role="main" class="ui-content">
 		<ul data-role="listview" data-inset="true">
         <li data-theme="b">Seleccione tipo de habitación</li>
-   		 <li><a href="#nr2">Sencilla</a></li>
-   		 <li><a href="#nr2">Doble</a></li>
-   		 <li><a href="#nr2">Triple</a></li>
+   		 <li><a href="#">Sencilla</a></li>
+   		 <li><a href="#">Doble</a></li>
+   		 <li><a href="#">Triple</a></li>
 		</ul>
 	</div><!-- /content -->
 
@@ -167,11 +166,16 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
 	<div role="main" class="ui-content">
 		<table>
         	<thead>
-        		<th>Fecha</th>
-                <th>Tipo de Habitación</th>
+            <tr>
+        		<!--<th>Fecha</th>-->
+                <th>Tipo</th>
+                <th>Habitaciones</th>
+                <th>Personas</th>
+                <th>Días</th>
+            </tr>
        		</thead>
-            <tbody>
-            
+            <tbody id="tbody">
+      
             </tbody>
         </table>
 	</div><!-- /content -->
@@ -252,7 +256,11 @@ Vea la disponibilidad de los contactos, envíe mensajes instantáneos e inicie r
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.4.min.js"></script>
 <script src="js/actions.js"></script>
+<!-- librerias Phonegap -->
 <script src="js/API/capture.js"></script>
 <script src="js/API/fileTransfer.js"></script>
+<script src="js/API/network-info.js"></script>
+<script src="js/API/websql.js"></script>
+
 </body>
 </html>
