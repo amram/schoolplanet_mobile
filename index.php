@@ -70,9 +70,11 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
 	
     <div role="main" class="ui-content" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back.png)";><!-- /header -->
     <center>
-		<?php
-        echo 'FUNCIONA';
-        ?>
+  
+		<object data="http://www.web-source.net" width="600" height="400">
+    <embed src="http://www.web-source.net" width="600" height="400"> </embed>
+    Error: Embedded data could not be displayed.
+</object>
         </center>
 	</div><!-- /content -->
 
