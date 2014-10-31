@@ -72,7 +72,6 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
     <center>
   
 		<object data="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="500">
-    <embed src="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="500"> </embed>
     Error: Comprueba tu conexión a internet.
 </object>
         </center>
