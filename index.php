@@ -71,20 +71,16 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
     <div role="main" class="ui-content" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back.png)";><!-- /header -->
     <center>
   
-		<object data="http://www.web-source.net" width="600" height="400">
-    <embed src="http://www.web-source.net" width="600" height="400"> </embed>
-    Error: Embedded data could not be displayed.
+		<object data="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="500">
+    <embed src="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="500"> </embed>
+    Error: Comprueba tu conexión a internet.
 </object>
         </center>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed" data-theme="b">
-		<div data-role="navbar" data-theme="b">
-    		<ul>
-        		<li><a href="#" data-rel="back" style="background-color:#aa0000;">Cancelar</a></li>
-        		<li><a href="#">Siguiente</a></li>
-    		</ul>
-</div><!-- /navbar -->
+		<span style="font-size:10pt;">Todos los derechos reservados &copy;</span>
+        <a href="#nosotros" data-transition="slideup">Info</a>
 	</div><!-- /footer -->
     
 </div><!-- /page -->
