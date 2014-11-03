@@ -23,25 +23,25 @@ var fn = {
     },
     registro: function(){
         var nombre = $('#regName').val();
-        var mail = $('#regMail').val();
-        var tel = $('#regTel').val();
+        var password = $('#regPass').val();
+       
         var foto = $('#regTake').attr('rel');
-        if(nombre != '' && mail != '' && tel != '' && foto != '' && foto != undefined){
+        if(nombre != '' && password != ''){
             //Enviar datos al Servidor.
-            fn.enviarRegistro(nombre, mail, tel, foto);
+            fn.enviarRegistro(nombre, password);
         }else{
             navigator.notification.alert("Todos los campos son requeridos.",null,'Error','Aceptar');
         } 
     },
-    enviarRegistro: function(nom, mail, tel, foto){
+    enviarRegistro: function(nombre, password, foto){
         $.mobile.loading( 'show' );
         $.ajax({
             type: "POST",
-            url: "http://carlos.igitsoft.com/apps/test.php",
-            data: {nom:nom,mail:mail,tel:tel}
+            url: "http://50.62.9.206/~srealms/nuevageneracion/test.php",
+            data: {nombre:nombre,password:password}
         }).done(function(respuesta){
             if( respuesta == '1' ){
-                myTransfer.subir(foto, "http://carlos.igitsoft.com/apps/test.php");
+                myTransfer.subir(foto, "http://50.62.9.206/~srealms/nuevageneracion/test.php");
             }
         });
     },
@@ -49,7 +49,7 @@ var fn = {
         $.mobile.loading( 'show' );
         $.ajax({
             type: "POST",
-            url: "http://carlos.igitsoft.com/apps/test.php",
+            url: "http://50.62.9.206/~srealms/nuevageneracion/test.php",
             data: {tipo:th,habitaciones:ha,personas:pr,dias:di}
         }).done(function(respuesta){
             if( respuesta == '1' ){

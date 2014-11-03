@@ -11,7 +11,38 @@
 
 <body>
 
+
+<!--   INICIO    -->
+
 <div data-role="page" id="home" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back2.png)";>
+	<div data-role="header" style="background:#009"><center>
+    <img src="http://50.62.9.206/~srealms/nuevageneracion/logoX.png"  width="200" height="85" />
+    </center>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true">
+        	<li data-theme="b" style="background:#009">Datos de usuario</li>
+            <li><input type="text" placeholder="Nombre" id="regName"></li>
+            <li><input type="password" placeholder="Password" id="regPass"></li>
+            
+           
+            <li><a href="#" id="regSend" data-role="button" style="text-align:center; background:#009" data-theme="b">Iniciar Sesión</a></li>
+        </ul>
+
+	<div data-role="footer" data-position="fixed" data-theme="b" style="background:#009">
+		<span style="font-size:10pt;"><center>Todos los derechos reservados &copy;</center></span>
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+
+
+
+
+<!--     MENÚ     -->
+
+<div data-role="page" id="menu" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back2.png)";>
 
 	<div data-role="header" style="background:#009"><center>
     <img src="http://50.62.9.206/~srealms/nuevageneracion/logoX.png"  width="200" height="85" />
@@ -71,7 +102,7 @@ Por ello que asumimos la responsabilidad de los resultados de aprendizaje de tod
     <div role="main" class="ui-content" style="background:#FBDC04; background-image:url(http://50.62.9.206/~srealms/nuevageneracion/movil/back.png)";><!-- /header -->
     <center>
   
-		<object data="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="5500">
+		<object data="http://50.62.9.206/~srealms/nuevageneracion/actividad_movil.php?id_usuario=106" width="100%" height="10500">
     Error: Comprueba tu conexión a internet.
 </object>
         </center>
@@ -218,26 +249,7 @@ Vea la disponibilidad de los contactos, envíe mensajes instantáneos e inicie r
 
 
 
-<div data-role="page" id="reg">
 
-	<div data-role="header">
-		<h1>Registro</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<ul data-role="listview">
-        	<li data-theme="b">Datos de usuario</li>
-            <li><input type="text" placeholder="Nombre" id="regName"></li>
-            <li><input type="email" placeholder="Correo Electrónico" id="regMail"></li>
-            <li><input type="tel" placeholder="Teléfono" id="regTel"></li>
-            <li><a href="#" id="regTake">Tomar Foto</a></li>
-            <li id="foto"></li>
-            <li><a href="#" id="regSend" data-role="button" style="text-align:center;" data-theme="b">Registrar</a></li>
-        </ul>
-	</div><!-- /content -->
-
-    
-</div><!-- /page -->
 
 
 
